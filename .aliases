@@ -7,20 +7,21 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+alias cls="clear"
 
 # Shortcuts
-alias d="cd /Volumes/Documents/"
-alias dl="cd /Volumes/Downloads/FromWeb"
-alias dt="cd /Volumes/Desktop"
-alias p="cd /Volumes/projects"
-alias pc="cd /Volumes/AAW-MB-2/clients"
-alias pl="cd /Volumes/AAW-MB-2/playground"
+alias d="cd ~/Documents/"
+alias dl="cd ~/Downloads/FromWeb"
+alias dt="cd ~/Desktop"
+alias p="cd ~/projects"
+#alias pc="cd /Volumes/AAW-MB-2/clients"
+alias pl="cd ~/playground"
 alias g="git"
 alias h="history"
 alias j="jobs"
 alias aliases="code ~/.aliases"
 alias edithosts="sudo code /etc/hosts"
-alias doc="cd  /Volumes/projects/playground/docker && ls"
+#alias doc="cd  /Volumes/projects/playground/docker && ls"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

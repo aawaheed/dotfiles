@@ -2,7 +2,7 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-#git pull origin main;
+#git pull origin mac2021;
 
 function doIt() {
 	rsync --exclude ".git/" \
@@ -12,7 +12,11 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
+		exec bash;
+		source ~/.bashrc;
 	source ~/.bash_profile;
+	exec zsh;
+	source ~/.zshrc;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
